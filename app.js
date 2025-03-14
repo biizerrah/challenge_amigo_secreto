@@ -3,26 +3,30 @@ let amigos = []
 
 function adicionarAmigo(){
 
-    let mostrarAmigos = document.getElementById("listaAmigos")
-    mostrarAmigos.innerHTML = ""
     let nome = document.getElementById("amigo").value
 
     if(nome == ""){
 
-        alert("Adicione um nome")
+        alert("Por favor, insira um nome.")
         
     }else{
-        
+
         amigos.push(nome)
         document.getElementById("amigo").value = ""
     }
     
-    
+    mostrarNaTela()
+
+}
+
+function mostrarNaTela(){
+
+    let mostrarAmigos = document.getElementById("listaAmigos")
+    mostrarAmigos.innerHTML = ""
 
     for(let i = 0; i < amigos.length; i++){
 
-    mostrarAmigos.innerHTML += `<li>${amigos[i]}</li>`
-    
+        mostrarAmigos.innerHTML += `<li>${amigos[i]}</li>`
+        
+    }
 }
-}
-
