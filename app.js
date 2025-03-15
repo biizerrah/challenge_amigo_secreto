@@ -1,5 +1,5 @@
 let amigos = []
-
+let sorteado
 
 function adicionarAmigo(){
 
@@ -29,4 +29,30 @@ function mostrarNaTela(){
         mostrarAmigos.innerHTML += `<li>${amigos[i]}</li>`
         
     }
+}
+
+function sortearAmigo(){
+    
+    
+    let mostrarAmigos = document.getElementById("listaAmigos")
+    mostrarAmigos.innerHTML = ""
+    
+    if(amigos.length == 0){
+
+        alert("Não há amigos para sortear")
+
+    }else{
+
+        sorteado = Math.floor(Math.random() * amigos.length)
+        
+        mostrarSorteados()
+    }
+
+}
+
+function mostrarSorteados(){
+
+    let mostrarSorteado = document.getElementById("sorteado")
+    mostrarSorteado.innerHTML = amigos[sorteado]
+
 }
