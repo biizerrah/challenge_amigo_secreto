@@ -1,7 +1,7 @@
 # Challenge Amigo Secreto
 
 
-## Este é um projeto de fixação de aprendizagem que consiste em um soretio de nomes para um amig secreto. Para utiliza - lo siga as seguinte instruções. 
+## Este é um projeto de fixação de aprendizagem que consiste em um sorteio de nomes para um amigo secreto. Para utiliza - lo siga as seguintes instruções. 
 
 
 ### Guia de uso
